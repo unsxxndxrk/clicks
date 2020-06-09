@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="HandheldFriendly" content="true">
+    <title>Clicker!</title>
+    <meta name="author" content="Selin Corvin">
+    <meta name="description" content="browser game, game, clicker, app, application, web app">
+    <meta name="keywords" content="web, app, application, game, clicker, browser">
+    <!-- Main CSS -->
+    <link href="css/main.css" rel="stylesheet">
+    <!-- Normalize CSS -->
+    <link href="css/normalize.css" rel="stylesheet">
+    <!-- Responsive CSS -->
+    <link href="css/responsive.css" rel="stylesheet">
+    <!-- Stroke Gap Icons -->
+    <link href="css/stroke-gap-icons.css" rel="stylesheet">
+</head>
+<body>
+
+	<!-- Main -->
+	<section id="main" class="main">
+
+		<!-- Particles Background -->
+		<div id="particles-js" class="particles-bg relative d-flex align-items-center justify-content-center">
+
+			<!-- Saved text alert -->
+			<div class="saved-text absolute d-flex align-items-center justify-content-center" id="saved_text">
+				Your changes has been saved!
+			</div>
+
+			<!-- Controls -->
+			<div class="controls d-flex justify-content-center flex-column align-items-center flex-start-h absolute">
+				<div class="control__play control__item" id="play">
+					<i class="icon icon-Play"></i>
+				</div>
+				<div class="control__stop control__item" id="stop">
+					<i class="icon icon-Stop"></i>
+				</div>
+			</div>
+
+
+			<!-- Sidebar Open Button -->
+			<div class="open-btn absolute d-flex justify-content-center align-items-center" id="menu_btn">
+				<div class="open-btn__wrapper">
+					<span class="d-block m-auto"></span>
+					<span class="d-block m-auto"></span>
+					<span class="d-block m-auto"></span>
+				</div>
+			</div>
+	
+
+			<!-- Main game field -->
+			<div class="main__wrapper absolute" id="main_wrapper">
+				<div class="circles__wrapper relative" id="circles_wrapper">
+					<div class="circle-one absolute d-none circle" id="circle_one"></div>
+					<div class="circle-two absolute d-none circle" id="circle_two"></div>
+					<div class="circle-three absolute d-none circle" id="circle_three"></div>
+					<div class="circle-four absolute d-none circle" id="circle_four"></div>
+					<div class="circle-five absolute d-none circle" id="circle_five"></div>
+				</div>
+			</div>
+
+
+			<!-- Sidebar -->
+			<div class="sidebar absolute" id="sidebar">
+				<div class="close absolute" id="close_sidebar">
+					Close
+				</div>
+				<div class="sidebar__heading">
+					<h2 class="sidebar__title text-center">Game Settings</h2>
+					<hr class="sidebar__hr">
+					<div align="sidebar__settings">
+						<!-- Theme Settings -->
+						<div class="sidebar__theme sidebar__setting d-flex align-items-center">
+							<h3 class="sidebar__theme-title sidebar__setting-title">1) Theme: </h3>
+							<label for="dark_theme" class="sidebar__set-label close_saved" id="dark_label">Dark</label>
+							<input class="sidebar__set-input close_saved" type="radio" value="Dark" name="theme" id="dark_theme" checked>
+							<label for="light_theme" class="sidebar__set-label close_saved" id="light_label">Light</label>
+							<input class="sidebar__set-input close_saved" type="radio" value="Light" name="theme" id="light_theme">
+						</div>
+
+						<!-- Speed Settings -->
+						<div class="sidebar__speed sidebar__setting d-flex align-items-center">
+							<h3 class="sidebar__speed-title sidebar__setting-title">2) Speed: </h3>
+							<label for="speed_fast" class="sidebar__set-label close_saved" id="speed_fast_label">Fast</label>
+							<input class="sidebar__set-input close_saved" type="radio" value="Fast" name="speed" id="speed_fast">
+							<label for="speed_medium" class="sidebar__set-label close_saved" id="speed_medium_label">Medium</label>
+							<input class="sidebar__set-input close_saved" type="radio" value="Medium" name="speed" id="speed_medium" checked>
+							<label for="speed_slow" class="sidebar__set-label close_saved" id="speed_slow_label">Slow</label>
+							<input class="sidebar__set-input close_saved" type="radio" value="Slow" name="speed" id="speed_slow">
+						</div>
+
+						<!-- Mode Settings -->
+						<div class="sidebar__settings sidebar__mode d-flex align-items-center">
+							<h3 class="sidebar__mode-title sidebar__setting-title">3) Mode: </h3>
+							<label for="free_mode" class="sidebar__set-label close_saved" id="free_mode_label">Free</label>
+							<input class="sidebar__set-input close_saved" type="radio" value="Free" name="mode" id="free_mode">
+							<label for="score_mode" class="sidebar__set-label close_saved" id="score_mode_label">Score</label>
+							<input class="sidebar__set-input close_saved" type="radio" value="Score" name="mode" id="score_mode" checked>
+						</div>
+					</div>
+				</div>
+				<button class="save-btn d-block m-auto" id="save_btn" type="button">Save</button>
+			</div>
+
+
+		</div><!-- Particles Bg -->
+
+		<!-- Author -->
+		<span class="author absolute">by Selin Corvin</span>
+
+		<!-- On sidebar open Bg -->
+		<div class="on-sidebar-active absolute" id="on_sidebar_active"></div>
+		
+		<!-- Timer -->
+		<div class="timer d-none absolute d-flex justify-content-center align-items-center" id="timer"><span id="timer_field">3</span></div>
+
+		<!-- Click text -->
+		<div class="click absolute d-flex justify-content-center align-items-center d-none" id="click">Click!</div>
+
+		<!-- Show this block when game is over -->
+		<div class="d-none game-over absolute d-flex justify-content-center align-items-center" id="game_over">
+			<div class="game-over__inner text-center d-flex align-items-center justify-content-center flex-column">
+				<h2 class="game-over__title">Game Over!</h2>
+				<span class="game-over__score" id="your_score">Your score: <span class="score" id="score"></span></span>
+				<button class="continue-btn" id="cont_btn">Continue</button>
+			</div>
+		</div>
+
+		<!-- Show the score while player on game -->
+		<div class="show-score absolute text-center" id="show_score">Score: <span class="play-score" id="play_score">0</span></div>
+	</section>
+<!-- Main JS -->
+<script type="text/javascript" src="js/main.js"></script>
+<!-- Particles JS -->
+<script type="text/javascript" src="js/particles.js"></script>
+<script type="text/javascript" src="js/app.js"></script>
+<!--[if lt IE 9]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+</body>
+</html>

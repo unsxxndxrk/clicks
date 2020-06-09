@@ -1,0 +1,81 @@
+/* 2560 and up */
+@media screen and (max-width: 3000px) { .circle { height: 300px; width: 300px; } }
+
+/* 1920 - 2559 px */
+@media screen and (max-width: 2559px) { .circle { height: 290px; width: 290px; } }
+
+/* 1680 - 1919 px */
+@media screen and (max-width: 1919px) { .circle { height: 250px; width: 250px; } }
+
+/* 1600 - 1679 px */
+@media screen and (max-width: 1679px) { .circle { height: 220px; width: 220px; } }
+
+/* 1366 - 1599 px */
+@media screen and (max-width: 1599px) { .circle { height: 190px; width: 190px; } }
+
+/* 1080 - 1365 px */
+@media screen and (max-width: 1279px) { 
+	.main .particles-bg .main__wrapper { width: 85%; } 
+
+	.saved-text { left: 40%; }
+}
+
+/* 1024 - 1079 px */
+@media screen and (max-width: 1079px) { 
+	.circle { height: 150px; width: 150px; } 
+
+	.saved-text { left: 30%; }
+}
+
+/* 768 - 1023 (992px if bootstrap) px */
+@media screen and (max-width: 1023px) {
+	.main .particles-bg .main__wrapper { width: 80%; }
+
+	.saved-text { left: 36%; font-size: 14px; width: 300px; }
+}
+
+/* 600 - 767 px */
+@media screen and (max-width: 767px) {
+	.main { height: calc(100vh - 55px); }
+
+	.main .particles-bg .main__wrapper { width: 75%; top: 25px; }
+
+	.saved-text {
+	  top: unset;
+	  bottom: 30px;
+	  height: 100px;
+	  left: 50%;
+	  margin-left: -150px;
+	}
+
+	.click, .main .timer span { font-size: 100px; }
+
+	.game-over .game-over__inner .game-over__title { font-size: 50px; }
+
+	.game-over .game-over__inner .game-over__score { font-size: 30px; }
+}
+
+/* 480 - 599 px */
+@media screen and (max-width: 599px) {
+	.main .particles-bg .main__wrapper { width: 70%; }
+
+	.circle { height: 120px; width: 120px; }
+}
+
+/* 375 - 479 px */
+@media screen and (max-width: 479px) {
+	.main .particles-bg .main__wrapper { width: 65%; }
+
+	.circle { height: 100px; width: 100px; }
+
+	.main .author { font-size: 12px; }
+}
+
+/* 320 - 374 px */
+@media screen and (max-width: 374px) {
+	.main .particles-bg .main__wrapper { width: 60%; }
+
+	.main .particles-bg .sidebar { width: 300px; padding: 100px 5px; }
+
+	.main .particles-bg .sidebar .sidebar__setting-title { font-size: 16px; }
+}
