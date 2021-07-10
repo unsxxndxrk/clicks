@@ -1,14 +1,16 @@
 @font-face {
-  font-family: 'Jaapokkisubtract';
+  font-family: "Jaapokkisubtract";
   src: url("../fonts/JaapokkisubtractRegular.eot");
-  /* IE9 Compat Modes */
-  src: url("../fonts/JaapokkisubtractRegular.eot?#iefix") format("embedded-opentype"), url("../fonts/JaapokkisubtractRegular.woff2") format("woff2"), url("../fonts/JaapokkisubtractRegular.woff") format("woff"), url("../fonts/JaapokkisubtractRegular.ttf") format("truetype"), url("../fonts/JaapokkisubtractRegular#svgFontName") format("svg");
-  /* Legacy iOS */
+  src: url("../fonts/JaapokkisubtractRegular.eot?#iefix")
+      format("embedded-opentype"),
+    url("../fonts/JaapokkisubtractRegular.woff2") format("woff2"),
+    url("../fonts/JaapokkisubtractRegular.woff") format("woff"),
+    url("../fonts/JaapokkisubtractRegular.ttf") format("truetype"),
+    url("../fonts/JaapokkisubtractRegular#svgFontName") format("svg");
 }
 
-/* Specification */
 body {
-  font-family: 'Jaapokkisubtract', sans-serif;
+  font-family: "Jaapokkisubtract", sans-serif;
   color: #131331;
   overflow: hidden;
 }
@@ -93,88 +95,101 @@ body {
 
 .flex-wrap {
   -webkit-flex-wrap: wrap;
-      -ms-flex-wrap: wrap;
-          flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
 }
 
 .justify-content-center {
   -webkit-box-pack: center;
   -webkit-justify-content: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
 
 .justify-content-around {
   -webkit-justify-content: space-around;
-      -ms-flex-pack: distribute;
-          justify-content: space-around;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
 }
 
 .justify-content-between {
   -webkit-box-pack: justify;
   -webkit-justify-content: space-between;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
 }
 
 .align-items-center {
   -webkit-box-align: center;
   -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .flex-start-h {
   -webkit-box-pack: start;
   -webkit-justify-content: flex-start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
 }
 
 .flex-end-h {
   -webkit-box-pack: end;
   -webkit-justify-content: flex-end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
 }
 
 .flex-start-v {
   -webkit-box-align: start;
   -webkit-align-items: flex-start;
-      -ms-flex-align: start;
-          align-items: flex-start;
+  -ms-flex-align: start;
+  align-items: flex-start;
 }
 
 .flex-end-v {
   -webkit-box-align: end;
   -webkit-align-items: flex-end;
-      -ms-flex-align: end;
-          align-items: flex-end;
+  -ms-flex-align: end;
+  align-items: flex-end;
 }
 
 .flex-column {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -webkit-flex-direction: column;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
 }
 
-div, a, span, input, textarea, button {
+div,
+a,
+span,
+input,
+textarea,
+button {
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
-input, textarea, button {
+input,
+textarea,
+button {
   outline: none;
 }
 
-h1, h2, h3, h4, p, span {
+h1,
+h2,
+h3,
+h4,
+p,
+span {
   cursor: default;
   margin: 0;
 }
 
-ul, li {
+ul,
+li {
   display: block;
   margin: 0;
   padding: 0;
@@ -183,22 +198,22 @@ ul, li {
 @-webkit-keyframes scaleUp {
   0% {
     -webkit-transform: scale(0);
-            transform: scale(0);
+    transform: scale(0);
   }
   100% {
     -webkit-transform: scale(1);
-            transform: scale(1);
+    transform: scale(1);
   }
 }
 
 @keyframes scaleUp {
   0% {
     -webkit-transform: scale(0);
-            transform: scale(0);
+    transform: scale(0);
   }
   100% {
     -webkit-transform: scale(1);
-            transform: scale(1);
+    transform: scale(1);
   }
 }
 
@@ -206,19 +221,31 @@ ul, li {
   height: 190px;
   width: 190px;
   -webkit-border-radius: 50%;
-          border-radius: 50%;
+  border-radius: 50%;
   -webkit-transform: scale(0);
-      -ms-transform: scale(0);
-          transform: scale(0);
+  -ms-transform: scale(0);
+  transform: scale(0);
   z-index: 10;
-  background: -webkit-gradient(linear, left bottom, left top, from(#5d0b64), to(#2d0fb1));
+  background: -webkit-gradient(
+    linear,
+    left bottom,
+    left top,
+    from(#5d0b64),
+    to(#2d0fb1)
+  );
   background: -webkit-linear-gradient(bottom, #5d0b64, #2d0fb1);
   background: -o-linear-gradient(bottom, #5d0b64, #2d0fb1);
   background: linear-gradient(to top, #5d0b64, #2d0fb1);
 }
 
 .circle.circle_light {
-  background: -webkit-gradient(linear, left top, right bottom, from(#2b056b), to(#0025af)) !important;
+  background: -webkit-gradient(
+    linear,
+    left top,
+    right bottom,
+    from(#2b056b),
+    to(#0025af)
+  ) !important;
   background: -webkit-linear-gradient(top left, #2b056b, #0025af) !important;
   background: -o-linear-gradient(top left, #2b056b, #0025af) !important;
   background: linear-gradient(to bottom right, #2b056b, #0025af) !important;
@@ -226,21 +253,25 @@ ul, li {
 
 .circle_animate {
   -webkit-animation: scaleUp 0.3s ease;
-          animation: scaleUp 0.3s ease;
+  animation: scaleUp 0.3s ease;
 }
 
-/* Main */
 .main {
   height: 100vh;
   width: 100%;
   overflow: hidden;
 }
 
-/* Particles Background */
 .main .particles-bg {
   height: inherit;
   width: inherit;
-  background: -webkit-gradient(linear, left bottom, left top, from(#020209), to(#090d39));
+  background: -webkit-gradient(
+    linear,
+    left bottom,
+    left top,
+    from(#020209),
+    to(#090d39)
+  );
   background: -webkit-linear-gradient(bottom, #020209, #090d39);
   background: -o-linear-gradient(bottom, #020209, #090d39);
   background: linear-gradient(to top, #020209, #090d39);
@@ -251,14 +282,14 @@ ul, li {
   width: 90%;
   background: rgba(20, 20, 47, 0.97);
   -webkit-border-radius: 5px;
-          border-radius: 5px;
+  border-radius: 5px;
 }
 
 .main .particles-bg .main__wrapper .circles__wrapper {
   height: 100%;
   width: 100%;
   -webkit-border-radius: 5px;
-          border-radius: 5px;
+  border-radius: 5px;
 }
 
 .main .particles-bg .main__wrapper.main__wrapper_light {
@@ -270,7 +301,13 @@ ul, li {
   right: -350px;
   height: 100%;
   top: 0;
-  background: -webkit-gradient(linear, left bottom, left top, from(#020209), to(#090d39));
+  background: -webkit-gradient(
+    linear,
+    left bottom,
+    left top,
+    from(#020209),
+    to(#090d39)
+  );
   background: -webkit-linear-gradient(bottom, #020209, #090d39);
   background: -o-linear-gradient(bottom, #020209, #090d39);
   background: linear-gradient(to top, #020209, #090d39);
@@ -312,7 +349,7 @@ ul, li {
   background: #fafafa;
   border: none;
   -webkit-border-radius: 2px;
-          border-radius: 2px;
+  border-radius: 2px;
   margin-bottom: 50px;
 }
 
@@ -333,27 +370,37 @@ ul, li {
   height: 15px;
   width: 15px;
   -webkit-border-radius: 2px;
-          border-radius: 2px;
+  border-radius: 2px;
 }
 
-.main .particles-bg .sidebar #dark_theme, .main .particles-bg .sidebar #speed_fast, .main .particles-bg .sidebar #speed_medium, .main .particles-bg .sidebar #free_mode {
+.main .particles-bg .sidebar #dark_theme,
+.main .particles-bg .sidebar #speed_fast,
+.main .particles-bg .sidebar #speed_medium,
+.main .particles-bg .sidebar #free_mode {
   margin-right: 13px;
 }
 
-.main .particles-bg .sidebar .sidebar__speed, .main .particles-bg .sidebar .sidebar__mode {
+.main .particles-bg .sidebar .sidebar__speed,
+.main .particles-bg .sidebar .sidebar__mode {
   margin-top: 30px;
 }
 
 .main .particles-bg .sidebar .save-btn {
   margin-top: 40px;
-  background: -webkit-gradient(linear, left top, right bottom, from(#1200ff), to(#10024b));
+  background: -webkit-gradient(
+    linear,
+    left top,
+    right bottom,
+    from(#1200ff),
+    to(#10024b)
+  );
   background: -webkit-linear-gradient(top left, #1200ff, #10024b);
   background: -o-linear-gradient(top left, #1200ff, #10024b);
   background: linear-gradient(to bottom right, #1200ff, #10024b);
   padding: 10px 30px;
   border: none;
   -webkit-border-radius: 10px;
-          border-radius: 10px;
+  border-radius: 10px;
   font-size: 20px;
   font-weight: 500;
   color: #fafafa;
@@ -365,13 +412,19 @@ ul, li {
 
 .main .particles-bg .sidebar .save-btn:hover {
   -webkit-box-shadow: 0 0 20px #1a008b;
-          box-shadow: 0 0 20px #1a008b;
+  box-shadow: 0 0 20px #1a008b;
   -webkit-border-radius: 15px;
-          border-radius: 15px;
+  border-radius: 15px;
 }
 
 .main .particles-bg .sidebar .save-btn.save-btn_light {
-  background: -webkit-gradient(linear, left top, right bottom, from(#a734ff), to(#6c1a80));
+  background: -webkit-gradient(
+    linear,
+    left top,
+    right bottom,
+    from(#a734ff),
+    to(#6c1a80)
+  );
   background: -webkit-linear-gradient(top left, #a734ff, #6c1a80);
   background: -o-linear-gradient(top left, #a734ff, #6c1a80);
   background: linear-gradient(to bottom right, #a734ff, #6c1a80);
@@ -379,11 +432,17 @@ ul, li {
 
 .main .particles-bg .sidebar .save-btn.save-btn_light:hover {
   -webkit-box-shadow: 0 0 20px #691b7c;
-          box-shadow: 0 0 20px #691b7c;
+  box-shadow: 0 0 20px #691b7c;
 }
 
 .main .particles-bg .sidebar.sidebar_light {
-  background: -webkit-gradient(linear, left bottom, left top, from(#5d218c), to(#ae25d0));
+  background: -webkit-gradient(
+    linear,
+    left bottom,
+    left top,
+    from(#5d218c),
+    to(#ae25d0)
+  );
   background: -webkit-linear-gradient(bottom, #5d218c, #ae25d0);
   background: -o-linear-gradient(bottom, #5d218c, #ae25d0);
   background: linear-gradient(to top, #5d218c, #ae25d0);
@@ -404,14 +463,14 @@ ul, li {
   -webkit-transition: all 0.3s ease;
   -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
-  opacity: .75;
+  opacity: 0.75;
 }
 
 .main .particles-bg .controls .control__item:hover {
   color: #4758ff;
   -webkit-transform: scale(1.1);
-      -ms-transform: scale(1.1);
-          transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
   opacity: 1;
 }
 
@@ -431,7 +490,7 @@ ul, li {
   background: #4758ff;
   opacity: 0.4;
   -webkit-border-radius: 10px;
-          border-radius: 10px;
+  border-radius: 10px;
   cursor: pointer;
   -webkit-transition: all 0.3s ease;
   -o-transition: all 0.3s ease;
@@ -457,8 +516,8 @@ ul, li {
 
 .main .particles-bg .open-btn:hover {
   -webkit-transform: scale(1.1);
-      -ms-transform: scale(1.1);
-          transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
   opacity: 1;
 }
 
@@ -467,7 +526,13 @@ ul, li {
 }
 
 .main .particles-bg.particles-bg_light {
-  background: -webkit-gradient(linear, left bottom, left top, from(#b570f5), to(#bbabff));
+  background: -webkit-gradient(
+    linear,
+    left bottom,
+    left top,
+    from(#b570f5),
+    to(#bbabff)
+  );
   background: -webkit-linear-gradient(bottom, #b570f5, #bbabff);
   background: -o-linear-gradient(bottom, #b570f5, #bbabff);
   background: linear-gradient(to top, #b570f5, #bbabff);
@@ -515,7 +580,7 @@ ul, li {
 }
 
 .play-inactive {
-  opacity: .3 !important;
+  opacity: 0.3 !important;
   pointer-events: none;
 }
 
@@ -582,7 +647,13 @@ ul, li {
 
 .game-over .continue-btn {
   margin-top: 30px;
-  background: -webkit-gradient(linear, left top, right bottom, from(#1200ff), to(#10024b));
+  background: -webkit-gradient(
+    linear,
+    left top,
+    right bottom,
+    from(#1200ff),
+    to(#10024b)
+  );
   background: -webkit-linear-gradient(top left, #1200ff, #10024b);
   background: -o-linear-gradient(top left, #1200ff, #10024b);
   background: linear-gradient(to bottom right, #1200ff, #10024b);
@@ -591,7 +662,7 @@ ul, li {
   font-size: 20px;
   padding: 12px 25px;
   -webkit-border-radius: 5px;
-          border-radius: 5px;
+  border-radius: 5px;
   cursor: pointer;
   -webkit-transition: all 0.3s ease;
   -o-transition: all 0.3s ease;
@@ -600,13 +671,19 @@ ul, li {
 
 .game-over .continue-btn:hover {
   -webkit-box-shadow: 0 0 20px #1a008b;
-          box-shadow: 0 0 20px #1a008b;
+  box-shadow: 0 0 20px #1a008b;
   -webkit-border-radius: 15px;
-          border-radius: 15px;
+  border-radius: 15px;
 }
 
 .game-over .continue-btn.continue_light {
-  background: -webkit-gradient(linear, left top, right bottom, from(#a734ff), to(#6c1a80));
+  background: -webkit-gradient(
+    linear,
+    left top,
+    right bottom,
+    from(#a734ff),
+    to(#6c1a80)
+  );
   background: -webkit-linear-gradient(top left, #a734ff, #6c1a80);
   background: -o-linear-gradient(top left, #a734ff, #6c1a80);
   background: linear-gradient(to bottom right, #a734ff, #6c1a80);
@@ -614,7 +691,7 @@ ul, li {
 
 .game-over .continue-btn.continue_light:hover {
   -webkit-box-shadow: 0 0 20px #691b7c;
-          box-shadow: 0 0 20px #691b7c;
+  box-shadow: 0 0 20px #691b7c;
 }
 
 .show-score {
